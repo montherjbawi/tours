@@ -1,0 +1,611 @@
+<style>
+   .container {
+    margin-top: 5px;
+ }
+  h1 {
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+  }
+  h5 {
+    text-align: right;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: right;
+  }
+  ul li {
+    text-align: right;
+    list-style-type: none;
+  }
+  .grid-container {
+  display: grid;
+  grid-gap: 20px;
+
+  padding: 10px;
+}
+.grid-item {
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+  text-align: left;
+  background-color: #f5f5f5;
+  border-radius: 40px;
+}
+.grid-item:hover {
+  background-color: #eabd84;
+}
+
+
+.ul li  {
+  text-align: center;
+  display: inline-block;
+  margin-left: 40px;
+}
+.fa-home, .fa-car, .fa-plane, .fa-graduation-cap, .fa-comment:before {
+    content: "\f015";
+    /* background-color: #f2dede; */
+    color: #906565;
+}
+
+
+
+
+  .row{
+    display: table;
+    width: 100%;
+    margin-left: 8px;
+}
+
+.first, .second{
+    display: table-cell;
+    float: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  height: 100px;
+  border-radius: 50px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+
+
+.hvrbox,
+.hvrbox * {
+  box-sizing: border-box;
+}
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+.hvrbox img {
+  max-width: 100%;
+  border-radius: 50px;
+
+
+  margin-left: 20px;
+}
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  margin-left: 20px;
+  border-radius: 50px;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox .hvrbox-text {
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+  font-size: 15px;
+  border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+  display: block;
+}
+
+.centered {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+</style>
+
+<div class="row">
+  <div class="column">
+    <a href="studies">
+<div class="hvrbox">
+  <div class="container1">
+      <img src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1585679616/classroom_avbdpb.jpg" alt="University" class="hvrbox-layer_bottom" style="width:190px " height="135px">
+      <div class="centered"></div>
+</div>
+  <div class="hvrbox-layer_top">
+    <div class="hvrbox-text">Study</div>
+  </div>
+</div>
+</div>
+</a>
+    <div class="column"><a href="hospitals">
+<div class="hvrbox">
+  <div class="container1">
+      <img src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1585737032/hos5_zokmmn.jpg" alt="Hospital" class="hvrbox-layer_bottom" style="width:190px " height="135px">
+      <div class="centered"></div>
+</div>
+  <div class="hvrbox-layer_top">
+    <div class="hvrbox-text">Medical Treatment</div>
+  </div>
+</div>
+</div></a>
+
+  <div class="column">
+    <a href="tours">
+<div class="hvrbox">
+  <div class="container1">
+      <img src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1585679643/tour_y1x2tq.jpg" alt="Tours" class="hvrbox-layer_bottom" style="width:190px " height="135px">
+      <div class="centered"></div>
+</div>
+  <div class="hvrbox-layer_top">
+    <div class="hvrbox-text">Tours in Germany</div>
+  </div>
+</div></a>
+</div>
+<div class="column">
+  <a href="hospitals">
+<div class="hvrbox">
+  <div class="container1">
+      <img src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1585841894/nigel-tadyanehondo--cuyqetla_Q-unsplash_sewtlq.jpg" style="width:190px " height="135px">
+      <div class="centered"></div>
+</div>
+  <div class="hvrbox-layer_top">
+    <div class="hvrbox-text">Cars </div>
+  </div>
+</div>
+</div>
+</a>
+</div>
+<br>
+<br><br>
+<div class="grid-container">
+  <div class="grid-item">
+    <h1>لماذا العلاج في ألمانيا</h1>
+    <p>تعتبر ألمانيا من أرقى دول العالم في المجال الطبي وخبرة أطبائها وجودة نظامها الصحي غنية عن التعريف كما أن إسهامات الألمان في البحوث الطبية والأدوية تأتي في رأس قائمة الدول المتقدمة
+ هناك الكثير من المستشفيات في ألمانيا والعيادات الخاصة أيضاً ، المستشفيات في معظمها مملوكة للدولة وتشرف عليها الدولة مباشرة أو الجامعات وتعتبر المستشفيات الجامعية في ألمانيا من أفضل المستشفيات في العالم.</p>
+ <p>بالنسبة للعلاج في ألمانيا فالمطلوب هو تقرير طبي حديث باللغة الانجليزية ليس أقدم من ثلاثة أشهر وصورة من جواز السفر ويجب مراسلة المستشفى للحصول على الموافقة وعلى دعوة من المستشفى أو العيادة للقدوم إلى ألمانيا ، هناك بعض المستشفيات التي تضع شروطاً مسبقة لقبول الطلبات من ضمنها وضع مبلغ ضمان في المستشفى.
+ </p>
+
+  </div>
+
+</div>
+
+<div class="grid-container">
+  <div class="grid-item">
+  <h1>المركز العلاجي السياحي في المانيا </h1>
+<ul style="padding: 10px;">
+  <h4><li><a href="hospitals">. تأمين خدمات العلاج والترجمه في مشافي ألمانيا -
+</a></li></h4>
+<h4><li><a href="hospitals">. استقبال من المطار للفندق -
+</a></li></h4>
+ <h4><li><a href="tours">. حجوزات فنادق وشقق سكنية - </a></li></h4>
+  <h4><li><a href="tours">. سيارات للتنقل في المانيا -
+
+</a></li></h4>
+ <h4><li><a href="studies">. تأمين قبولات في الجامعات  لدراسة البكالوريس والماستر واللغة -
+</a></li></h4>
+<h4><li><a href="studies"> . منح جامعات ألمانيا  -
+</a></li></h4>
+  <h4><li> <a href="tours">. كروبات سياحية في ألمانيا واوروبا -
+</a></li></h4>
+
+</ul>
+<ul class="ul" style="text-align: center; ">
+
+  <li><i class="fa fa-plane" style="font-size:70px"></i></li>
+
+   <li><i class="fa fa-home" style="font-size:70px"></i></li>
+
+  <li><i class="fa fa-car" style="font-size:70px"></i></li>
+
+
+
+ <li><i class="fa fa-comment" style="font-size:70px"></i></li>
+
+ <li><i class="fa fa-graduation-cap" style="font-size:70px"></i></li>
+
+
+
+    </ul>
+</div>
+</div>
+
+
+
+
+<div class="center jumbotron" style="border-radius: 40px">
+  <h1 style="color: black">GermanTour</h1>
+  <%= link_to "Sign up now", signup_path, class: "btn btn-danger btn-lg btn-xlarge" %>
+</div>
+
+
+<div class="grid-container">
+  <div class="grid-item">
+   <h1>تكلفة العلاج في ألمانيا</h1>
+   <p>عدد متزايد من الناس يذهبون إلى ألمانيا للعلاج، وهذا ليس بصدفة. يتم استثمار أموال ضخمة في تطوير الطب في هذا البلد. من حيث متوسط العمر المتوقع في العالم، تحتل ألمانيا المرتبة الثالثة، وهذا يعد إنجازاً مباشراً لنظام الرعاية الصحية في البلاد. </p>
+   <h5>:تعتمد تكلفة العلاج في ألمانيا على العديد من العوامل</h5>
+   <ul>
+     <li>التشخيص -</li>
+     <li>قائمة الإجراءات التشخيصية والعلاجية اللازمة -
+</li>
+     <li>مدة بقاء المريض في المستشفى الداخلي؛ -
+
+</li>
+     <li>وجود الأمراض المصاحبة، والتي تتطلب العلاج أيضاً -
+
+</li>
+     <li>عدد المهنيين الطبيين المشاركين في الإجراء العلاجي أو التشخيصي -
+
+</li>
+     <li>مستوى راحة الغرفة -
+
+</li>
+
+   </ul>
+</div>
+</div><br>
+<div class="grid-container">
+  <div class="grid-item">
+  <h1>(CHECK UP)الفحص الطبي
+
+</h1>
+<ul>
+  <li> € الفحص الأساسي ابتداء من 2955 -
+
+</li>
+  <li> € الفحص الموسع للجسم كله ابتداء من 9797 -
+
+</li>
+  <li> € فحص أمراض النساء ابتداء من 1434 -
+
+</li>
+  <li>€ فحص العظام ابتداء من 1212 -
+</li>
+  <li>
+     €فحص طب العيون ابتداء من 1534 -
+
+  </li>
+
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h1>طب الأورام وعلم الدم
+
+</h1>
+<ul>
+  <li> € سرطان البروستاتا: علاج PSMA (لوتيتيوم 177) ابتداء من 14683 -
+</li>
+  <li> € إزالة الرحم عند سرطان بطانة الرحم ابتداء من 25760 -
+</li>
+  <li> € الاستئصال الجزئي لسرطان الثدي ابتداء من 10033 -
+</li>
+  <li> € العلاج الجراحي لسرطان الغدة الكظرية ابتداء من 13990 -
+</li>
+  <li> € سرطان المريء: التشخيص والعلاج التقليدي ابتداء من 6753 -
+</li>
+  <li> € سرطان المستقيم: العلاج الكيميائي والعلاج الإشعاعي ابتداء من 14278 -
+</li>
+  <li> € سرطان الدماغ: العلاج بالبروتونات ابتداء من 69841 -
+</li>
+<li> € سرطان المعدة: الإزالة الجزئية للأعضاء ابتداء من 30119 -
+</li>
+<li></li>
+<li> € اللوكيميا الليمفاوية الحادة (ALL): زراعة نخاع العظم ابتداء من 212317 -
+</li>
+<li> € سرطان الرئة: الاستئصال الجزئي ابتداء من 21583 -
+</li>
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>جراحة العظام
+</h2>
+<ul>
+  <li>€ علاج التهاب المفاصل ابتداء من 12065 -
+
+</li>
+  <li> € زراعة المفاصل الاصطناعية للكاحل ابتداء من 14862 -
+
+</li>
+  <li>€ زراعة المفاصل الاصطناعية للركبة مع إعادة التأهيل ابتداء من 17314 -
+</li>
+  <li> € زراعة المفاصل الاصطناعية للورك مع إعادة التأهيل ابتداء من 16637 -
+
+</li>
+  <li> € العلاج الجراحي لالتهاب العظام ابتداء من 18275 -
+</li>
+
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>طب العيون
+
+</h2>
+<ul>
+  <li>€ الورم الأرومي الشبكي: الاستئصال الجراحي ابتداء من 7721 -
+</li>
+  <li>€ تنكس الشبكية البقعي: التخثير بالليزر ابتداء من 6689 -
+
+</li>
+  <li>€ إزالة الساد وزراعة العدسة داخل العين (IOL) ابتداء من 6580 -
+
+</li>
+  <li>€ علاج الجلوكوما مع استئصال القزحية بالليزر ابتداء من 6612 -
+
+</li>
+  <li>€ قصر النظر: العلاج بالليزر (الليزك) ابتداء من 6641 -
+</li>
+<li>€ انفصال الشبكية: جراحة الشبكية والجسم الزجاجي ابتداء من 6644 -
+
+</li>
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2> طب القلب
+</h2>
+  <ul>
+    <li>€ الإغلاق الجراحي لخلل الحاجز الأذيني ابتداء من 20657 -
+
+</li>
+    <li>€ استبدال الصمام الأبهري ابتداء من 23990 -
+
+</li>
+    <li>€ زراعة منظم ضربات القلب ابتداء من 9745 -
+
+</li>
+    <li>€ جراحة مجازة الشريان التاجي ابتداء من 20600 -
+
+</li>
+    <li>€ وضع دعامات الشرايين التاجية ابتداء من 7558 -
+
+</li>
+    <li>€ عيوب القلب الخلقية والمكتسبة: العلاج الجراحي بدون استخدام CBP ابتداء من 24151 -
+
+</li>
+  </ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>الجراحة العامة
+</h2>
+<ul>
+  <li>€ العلاج بالليزر لعلاج الدوالي ابتداء من 4807 -
+
+</li>
+  <li>€ حصى الكلى مع موه الكلية: إزالة الحصى جراحياً ابتداء من 8801 -
+
+</li>
+  <li>€ تمدد الشريان الكلوي: العلاج الجراحي المفتوح ابتداء من 12147 -
+
+</li>
+  <li>€ الأذن الخفاشية: التصحيح الجراحي (رأب الأذن) ابتداء من 4602 -
+</li>
+  <li>€ ساركومة يوينغ ابتداء من 16533 -
+
+</li>
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>أمراض النساء والتوليد
+
+</h2>
+<ul>
+  <li>€ الورم العضلي الرحمي ابتداء من 8162 -
+
+</li>
+  <li>€ الولادة الطبيعية ابتداء من 4896 -
+</li>
+  <li>€ التلقيح الصناعي (IVF) ابتداء من 13048 -
+
+</li>
+  <li>€ الولادة القيصرية ابتداء من 7695 -
+</li>
+  <li> €الاستئصال الكلي للرحم وغشاء الأمعاء الشحمي ابتداء من 25760 -
+
+</li>
+
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>طب الأعصاب والجراحة العصبية
+</h2>
+<ul>
+  <li> € الاستئصال والانصمام بواسطة لوالب لتمدد الأوعية الدموية في الدماغ ابتداء من 22087 -
+</li>
+  <li>€ الانفتاق الفقري القرصي ( العنقي): العلاج الجراحي ابتداء من 8021 -
+
+</li>
+  <li>€ فتق القرص الفقري (الفقرات القطنية): العلاج الجراحي ابتداء من 8040 -
+</li>
+  <li>€ انصمام تشوهات الأوعية الدموية ابتداء من 32477 -
+
+</li>
+  <li>€ عملية جراحية لإزالة الورم الخبيث في الحبل الشوكي ابتداء من 19716 -
+
+</li>
+  <li>€ التشخيص العصبي الشامل بعد السكتة الدماغية، العلاج المحافظ ابتداء من 9563 -
+</li>
+  <li>€ الصرع: الفحص والعلاج التقليدي ابتداء من 8151 -
+</li>
+  <li>€إزالة ورم الدماغ باستخدام السايبر غاما ابتداء من 10935 -
+</li>
+  <li>€ إزالة ورم الدماغ باستخدام السايبر نايف ابتداء من 26076 -
+
+</li>
+  <li>€ الاستئصال الجراحي لورم الدماغ ابتداء من 16047 -
+
+</li>
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>إعادة التأهيل
+</h2>
+<ul>
+  <li>€ إعادة تأهيل القلب ابتداء من 567  / يوم -
+
+</li>
+  <li>€ إعادة التأهيل العصبي للأطفال ابتداء من 772 يورو / يوم -
+
+</li>
+  <li>€ إعادة التأهيل العصبي ابتداء من 676 / يوم -
+
+</li>
+  <li>€ إعادة تأهيل العظام ابتداء من 343  / يوم -
+
+</li>
+
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>جراحة المسالك البولية
+</h2>
+<ul>
+  <li>€ إزالة الكلى (استئصال الكلية بالمنظار مع استئصال الحالب) ابتداء من 13616 -
+</li>
+  <li>€ دوالي الخصية: العلاج الجراحي ابتداء من 7459 -
+</li>
+  <li>€ أورام البروستاتا: استئصال البروستاتا (TUR) باستخدام الليزر الأخضر ابتداء من 7550 -
+</li>
+  <li>€ تكسير حصى الكلى (تفتيت الحصوات) ابتداء من 7171 -
+
+</li>
+  <li> € علاج ضعف الانتصاب ابتداء من 1902 -
+
+</li>
+<li>€ التهاب البروستاتا المزمن: العلاج التقليدي ابتداء من 4557 -
+</li>
+
+</ul>
+</div>
+</div>
+<div class="grid-container">
+  <div class="grid-item">
+  <h2>طب الأنف والأذن والحنجرة
+</h2>
+<ul>
+  <li>€ نزح طبلة الأذن عند التهاب الأذن الوسطى ابتداء من 3630 -
+
+</li>
+  <li> € تصلب الأذن: جراحة العظم الركابي ابتداء من 7769 -
+
+</li>
+  <li>€ استئصال اللوزتين لسرطان اللوزتين ابتداء من 9627 -
+
+</li>
+  <li>€ الطنين: التشخيص والعلاج ابتداء من 2824 -
+</li>
+
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

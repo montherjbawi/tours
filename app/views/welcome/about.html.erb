@@ -1,0 +1,323 @@
+<style>
+  .container {
+    margin-top: 5px;
+}
+.grid-container {
+  background-color: #f7f5ec;
+  border-radius: 50px;
+
+}
+.grid-container:hover {
+  background-color: #eabd84;
+}
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 88px;
+  width: 200px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 20%;
+  background-color: #eabd84;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 9%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 9%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px lightblue;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+  background-color: #eabd84;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+h1 {
+  text-align: center;
+  padding: 18px;
+}
+h6{
+  text-align: center;
+}
+h4  {
+  text-align: right;
+}
+h2 {
+  text-align: right;
+}
+ul li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+<div class="grid-container">
+  <div class="grid-item">
+  <h1>المركز العلاجي السياحي في المانيا </h1>
+  <h2 style="padding: 30px"> يقدم المركز خدمات عديدة ومتميزة تشمل التنقلات والحجوزات والترجمه باللغة الانكليزية الالمانية والعربية - </h2>
+<ul style="padding: 32px;">
+  <h4><li><a href="hospitals">. تأمين خدمات العلاج والترجمه في مشافي ألمانيا -
+</a></li></h4>
+<h4><li><a href="hospitals">. استقبال من المطار للفندق -
+</a></li></h4>
+ <h4><li><a href="tours">. حجوزات فنادق وشقق سكنية - </a></li></h4>
+  <h4><li><a href="tours">. سيارات للتنقل في المانيا -
+
+</a></li></h4>
+ <h4><li><a href="studies">. تأمين قبولات في الجامعات  لدراسة البكالوريس والماستر واللغة -
+</a></li></h4>
+<h4><li><a href="studies"> . منح جامعات ألمانيا  -
+</a></li></h4>
+  <h4><li> <a href="tours">. كروبات سياحية في ألمانيا واوروبا -
+</a></li></h4>
+
+
+</div>
+</div>
+<h1>Our Team</h1><br>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1585679644/uni1_hcw5zq.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Berlin</h3>
+          <h3 class="name">Monther Jbawi</h3>
+          <h5 class="name">General Manager</h5>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1586958329/roman-burki-WT02K6mFy_I-unsplash_zvrgup.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Düsseldorf</h3>
+          <h3 class="title">Husam Jbawi</h3>
+          <h6 class="name">Translator</h6>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1586958783/nikolay-kovalenko-colin-viessmann-M0aij6vedLE-unsplash_fsu2m1.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Cologne</h3>
+          <h3 class="name">Monther Jbawi</h3>
+          <h5 class="name">General Manager</h5>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1586958900/jan-philipp-thiele-GfpzJyfudE8-unsplash_eljxcu.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Frankfurt</h3>
+        <h3 class="name">Monther Jbawi</h3>
+          <h5 class="name">General Manager</h5>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1585679644/uni1_hcw5zq.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Berlin</h3>
+          <h3 class="name">Monther Jbawi</h3>
+          <h5 class="name">General Manager</h5>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1586958329/roman-burki-WT02K6mFy_I-unsplash_zvrgup.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Düsseldorf</h3>
+          <h3 class="title">Husam Jbawi</h3>
+          <h6 class="name">Translator</h6>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1586958783/nikolay-kovalenko-colin-viessmann-M0aij6vedLE-unsplash_fsu2m1.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Cologne</h3>
+          <h3 class="name">Monther Jbawi</h3>
+          <h5 class="name">General Manager</h5>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://res.cloudinary.com/duf8tsxnt/image/upload/v1586958900/jan-philipp-thiele-GfpzJyfudE8-unsplash_eljxcu.jpg">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Frankfurt</h3>
+        <h3 class="name">Monther Jbawi</h3>
+          <h5 class="name">General Manager</h5>
+          <h6>E-mail:<strong style="color: blue">jbawijbawi2@gmail.com</strong></h6>
+          <h6>Whatsapp: <strong style="color: blue">00491629014596</strong></h6>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://www.twitter.com/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://www.google.com/" class="fa fa-google-plus" style="background-color: red" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
