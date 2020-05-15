@@ -44,10 +44,10 @@
       <ul class="nav navbar-nav">
         <li><%= link_to "Medical Treatment & Hospitals", hospitals_path %></li>
         <li><%= link_to "Study in Germany", studies_path %></li>
-        <li><%= link_to "Tours in Germany", tours_path %></li><% if logged_in? %>
+        <li><%= link_to "Tours in Germany", tours_path %></li>
         <li><%= link_to "Team & Contacts ", about_path %>
 
-            <li> <% end %>
+            </li>
 
 
         <li class="dropdown">
@@ -61,7 +61,7 @@
               <li role="separator" class="divider"></li>
               <li><%= link_to "Create New Category", new_category_path %></li>
               <li><%= link_to "Articles", articles_path %></li>
-        <li><%= link_to "Users", users_path %></li>
+
             <% end %>
           </ul>
         </li>
@@ -80,7 +80,7 @@
             <ul class="dropdown-menu">
               <li><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
               <li><%= link_to "View your profile", user_path(current_user) %></li>
-              <li><a href="#">Something else here</a></li>
+              <li><%= link_to "Users", users_path %></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Separated link</a></li>
             </ul>
