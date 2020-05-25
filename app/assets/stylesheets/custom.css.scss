@@ -16,6 +16,32 @@ $navbar-default-bg: black;
   color: #fff;
   text-decoration: none;
 }
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    text-align: left;
+    margin-right: 0;
+    padding-right: 11px;
+
+
+}
+.navbar-default {
+    background-color: #1d2125;
+    border-color: #581616;
+}
+.navbar-default .navbar-nav > li > a:hover {
+ color: orange;
+}
+.nav li {
+  margin-left: 2px;
+
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .center {
   text-align: center;
