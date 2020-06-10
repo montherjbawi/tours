@@ -36,9 +36,15 @@
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+  transition: transform .2s; /* Animation */
+
 }
 .card:hover {
-  background-color: #eabd84;
+  border-radius: 50px;
+  background-color: white;
+  border: 10px solid #03a9f4;
+  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
 }
 img {
   height: 200px;
@@ -78,10 +84,15 @@ img {
   text-align: left;
   background-color: #f5f5f5;
   border-radius: 47px;
+  border: 10px solid #03a9f4;
+  transition: transform .2s; /* Animation */
+
 }
 
 .grid-item:hover {
-  background-color:#eabd84;
+  background-color:white;
+  border: 10px solid navy;
+  transform: scale(1.05);
 }
 
 .ul li  {
@@ -382,7 +393,7 @@ To enroll at your university course in Germany you need to personally appear at 
   <li>The payment fee receipt</li>
 
 </ol>
-<a href="https://www.studying-in-germany.org/requirements-to-study-in-germany-for-indian-students/"><p>Check out all the requirements</p></a>
+
    <div class="center1">
     <button class="btn btn-primary"><%= link_to "Contact us", new_article_path %></button>
   </div>
