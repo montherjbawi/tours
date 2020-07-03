@@ -12,7 +12,7 @@ $navbar-default-bg: black;
 }
 
 #logo:hover {
-  color: #fff;
+  color: orange;
   text-decoration: none;
 }
 .navbar-default .navbar-nav > li > a {
@@ -20,8 +20,6 @@ $navbar-default-bg: black;
     text-align: left;
     margin-right: 0;
     padding-right: 11px;
-
-
 }
 .navbar-default {
     background-color: #1d2125;
@@ -38,8 +36,8 @@ $navbar-default-bg: black;
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 .center {
@@ -129,4 +127,10 @@ footer ul li {
 
 .input_checkbox input {
   width: auto !important;
+}
+  .alert-danger {
+    background-color: white;
+    border-color: #ebccd1;
+    color: red;
+    font-size: 18px;
 }

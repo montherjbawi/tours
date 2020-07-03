@@ -1,8 +1,7 @@
 <style>
-  .container {
+   .container {
     margin-top: 5px;
-}
-
+ }
   h1 {
     text-align: center;
   }
@@ -35,9 +34,13 @@
   text-align: left;
   background-color: #f5f5f5;
   border-radius: 40px;
+  border: 10px solid #03a9f4;
+  transition: transform .2s;
 }
 .grid-item:hover {
-  background-color: #eabd84;
+  background-color:white;
+  border: 10px solid navy;
+  transform: scale(1.05);
 }
 
 
@@ -51,11 +54,7 @@
     /* background-color: #f2dede; */
     color: #906565;
 }
-
-
-
-
-  .row{
+  .row {
     display: table;
     width: 100%;
     margin-left: 8px;
@@ -87,7 +86,6 @@
   clear: both;
 }
 
-
 .text {
   color: white;
   font-size: 20px;
@@ -100,9 +98,6 @@
   text-align: center;
 
 }
-
-
-
 .hvrbox,
 .hvrbox * {
   box-sizing: border-box;
@@ -242,7 +237,17 @@
 </div>
 <br>
 <br><br>
+<div class="grid-container">
+  <div class="grid-item">
+    <h1>لماذا العلاج في ألمانيا</h1>
+    <p>تعتبر ألمانيا من أرقى دول العالم في المجال الطبي وخبرة أطبائها وجودة نظامها الصحي غنية عن التعريف كما أن إسهامات الألمان في البحوث الطبية والأدوية تأتي في رأس قائمة الدول المتقدمة
+ هناك الكثير من المستشفيات في ألمانيا والعيادات الخاصة أيضاً ، المستشفيات في معظمها مملوكة للدولة وتشرف عليها الدولة مباشرة أو الجامعات وتعتبر المستشفيات الجامعية في ألمانيا من أفضل المستشفيات في العالم.</p>
+ <p>بالنسبة للعلاج في ألمانيا فالمطلوب هو تقرير طبي حديث باللغة الانجليزية ليس أقدم من ثلاثة أشهر وصورة من جواز السفر ويجب مراسلة المستشفى للحصول على الموافقة وعلى دعوة من المستشفى أو العيادة للقدوم إلى ألمانيا ، هناك بعض المستشفيات التي تضع شروطاً مسبقة لقبول الطلبات من ضمنها وضع مبلغ ضمان في المستشفى.
+ </p>
 
+  </div>
+
+</div>
 
 <div class="grid-container">
   <div class="grid-item">
@@ -271,35 +276,15 @@
    <li><i class="fa fa-home" style="font-size:70px"></i></li>
 
   <li><i class="fa fa-car" style="font-size:70px"></i></li>
-
-
-
  <li><i class="fa fa-comment" style="font-size:70px"></i></li>
 
  <li><i class="fa fa-graduation-cap" style="font-size:70px"></i></li>
 
-
-
     </ul>
 </div>
-</div>
-<div class="grid-container">
-  <div class="grid-item">
-    <h1>لماذا العلاج في ألمانيا</h1>
-    <p>تعتبر ألمانيا من أرقى دول العالم في المجال الطبي وخبرة أطبائها وجودة نظامها الصحي غنية عن التعريف كما أن إسهامات الألمان في البحوث الطبية والأدوية تأتي في رأس قائمة الدول المتقدمة
- هناك الكثير من المستشفيات في ألمانيا والعيادات الخاصة أيضاً ، المستشفيات في معظمها مملوكة للدولة وتشرف عليها الدولة مباشرة أو الجامعات وتعتبر المستشفيات الجامعية في ألمانيا من أفضل المستشفيات في العالم.</p>
- <p>بالنسبة للعلاج في ألمانيا فالمطلوب هو تقرير طبي حديث باللغة الانجليزية ليس أقدم من ثلاثة أشهر وصورة من جواز السفر ويجب مراسلة المستشفى للحصول على الموافقة وعلى دعوة من المستشفى أو العيادة للقدوم إلى ألمانيا ، هناك بعض المستشفيات التي تضع شروطاً مسبقة لقبول الطلبات من ضمنها وضع مبلغ ضمان في المستشفى.
- </p>
-
-  </div>
-
-</div>
-
-
-
-
+</div><br>
 <div class="center jumbotron" style="border-radius: 40px">
-  <h1 style="color: black">GermanTours</h1>
+  <h1 style="color: black">GermanTour</h1>
   <%= link_to "Sign up now", signup_path, class: "btn btn-danger btn-lg btn-xlarge" %>
 </div>
 
@@ -325,9 +310,7 @@
      <li>مستوى راحة الغرفة -
 
 </li>
-<li>مستوى راحة الغرفة -
 
-</li>
    </ul>
 </div>
 </div><br>
